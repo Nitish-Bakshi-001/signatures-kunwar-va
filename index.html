@@ -2,8 +2,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vriddhi Advisors Email Signature</title>
-
 <style>
 /* Base reset */
 body {
@@ -12,7 +12,7 @@ body {
   font-family:'Segoe UI','Calibri','Helvetica Neue',Arial,sans-serif;
 }
 
-/* Tablets (iPads & similar) */
+/* Tablets (iPads & similar) - 768px to 1024px */
 @media screen and (max-width:1024px) {
   .wrapper {
     max-width:420px !important;
@@ -23,15 +23,57 @@ body {
   .designation {
     font-size:14px !important;
   }
-  .logo img {
+  .logo {
     width:120px !important;
+    padding-right:12px !important;
+  }
+  .logo img {
+    width:110px !important;
+  }
+  .details {
+    font-size:13px !important;
+    line-height:20px !important;
+  }
+  .contact-row {
+    padding:3px 0 !important;
   }
 }
 
-/* Mobiles */
+/* Small tablets and large phones - 481px to 767px */
+@media screen and (max-width:767px) {
+  .wrapper {
+    max-width:100% !important;
+  }
+  .content-table {
+    display:block !important;
+    width:100% !important;
+  }
+  .logo {
+    display:block !important;
+    width:100% !important;
+    text-align:center !important;
+    padding:0 0 12px 0 !important;
+  }
+  .logo img {
+    width:120px !important;
+    margin:0 auto !important;
+  }
+  .details {
+    display:block !important;
+    width:100% !important;
+    font-size:13px !important;
+    line-height:20px !important;
+  }
+  .contact-table {
+    margin:0 auto !important;
+  }
+}
+
+/* Mobile phones - up to 480px */
 @media screen and (max-width:480px) {
   .wrapper {
     max-width:100% !important;
+    padding:0 10px !important;
   }
   .name {
     font-size:17px !important;
@@ -39,23 +81,35 @@ body {
   .designation {
     font-size:13px !important;
   }
-  .icon img {
-    width:18px !important;
-    height:18px !important;
-  }
   .logo img {
-    width:110px !important;
+    width:100px !important;
+  }
+  .details {
+    font-size:12px !important;
+    line-height:18px !important;
+  }
+  .icon img {
+    width:16px !important;
+    height:16px !important;
+  }
+  .contact-row {
+    padding:4px 0 !important;
+  }
+  .tagline {
+    font-size:13px !important;
+    padding:8px !important;
+  }
+  .disclaimer {
+    font-size:9px !important;
+    line-height:13px !important;
   }
 }
 </style>
 </head>
-
 <body>
-
 <table cellpadding="0" cellspacing="0" border="0" width="100%"
   class="wrapper"
   style="max-width:460px;color:#2f2f2f;">
-
 <!-- NAME -->
 <tr>
   <td style="padding:16px 0 6px 0;">
@@ -67,18 +121,15 @@ body {
     </div>
   </td>
 </tr>
-
 <!-- DIVIDER -->
 <tr>
   <td style="border-bottom:2px solid #3E6658;"></td>
 </tr>
-
 <!-- CONTENT -->
 <tr>
 <td style="padding:14px 0;">
-<table cellpadding="0" cellspacing="0" width="100%">
+<table cellpadding="0" cellspacing="0" width="100%" class="content-table">
 <tr>
-
 <!-- LOGO -->
 <td class="logo" width="140" valign="middle" style="padding-right:16px;">
   <img
@@ -87,34 +138,31 @@ body {
     width="130"
     style="display:block;border:0;outline:none;text-decoration:none;">
 </td>
-
 <!-- DETAILS -->
-<td valign="top" style="font-size:14px;line-height:22px;">
-
+<td class="details" valign="top" style="font-size:14px;line-height:22px;">
 <!-- EMAIL -->
-<table cellpadding="0" cellspacing="0">
-<tr>
-<td class="icon" style="padding-right:8px;">
+<table cellpadding="0" cellspacing="0" class="contact-table">
+<tr class="contact-row" style="padding:2px 0;">
+<td class="icon" style="padding-right:8px;vertical-align:middle;">
   <img src="https://img.icons8.com/material-rounded/48/3E6658/email.png"
     width="18" height="18" style="display:block;">
 </td>
-<td>
+<td style="vertical-align:middle;">
   <a href="mailto:kunwar.yuvraj@vriddhiadvisors.com"
-    style="color:#2f2f2f;text-decoration:none;">
+    style="color:#2f2f2f;text-decoration:none;word-break:break-word;">
     kunwar.yuvraj@vriddhiadvisors.com
   </a>
 </td>
 </tr>
 </table>
-
 <!-- PHONE -->
-<table cellpadding="0" cellspacing="0">
-<tr>
-<td class="icon" style="padding-right:8px;">
+<table cellpadding="0" cellspacing="0" class="contact-table" style="padding-top:4px;">
+<tr class="contact-row" style="padding:2px 0;">
+<td class="icon" style="padding-right:8px;vertical-align:middle;">
   <img src="https://img.icons8.com/material-rounded/48/3E6658/phone.png"
     width="18" height="18" style="display:block;">
 </td>
-<td>
+<td style="vertical-align:middle;">
   <a href="tel:+918727087004"
     style="color:#2f2f2f;text-decoration:none;">
     +91 87270 87004
@@ -122,15 +170,14 @@ body {
 </td>
 </tr>
 </table>
-
 <!-- WEBSITE -->
-<table cellpadding="0" cellspacing="0">
-<tr>
-<td class="icon" style="padding-right:8px;">
+<table cellpadding="0" cellspacing="0" class="contact-table" style="padding-top:4px;">
+<tr class="contact-row" style="padding:2px 0;">
+<td class="icon" style="padding-right:8px;vertical-align:middle;">
   <img src="https://img.icons8.com/material-rounded/48/3E6658/domain.png"
     width="18" height="18" style="display:block;">
 </td>
-<td>
+<td style="vertical-align:middle;">
   <a href="https://vriddhiadvisors.com"
     style="color:#2f2f2f;text-decoration:none;">
     vriddhiadvisors.com
@@ -138,22 +185,19 @@ body {
 </td>
 </tr>
 </table>
-
 </td>
 </tr>
 </table>
 </td>
 </tr>
-
 <!-- DIVIDER -->
 <tr>
 <td style="border-bottom:2px solid #3E6658;"></td>
 </tr>
-
 <!-- TAGLINE -->
 <tr>
 <td style="padding-top:8px;">
-  <div style="
+  <div class="tagline" style="
     background:#3E6658;
     color:#ffffff;
     font-size:15px;
@@ -164,10 +208,9 @@ body {
   </div>
 </td>
 </tr>
-
 <!-- DISCLAIMER -->
 <tr>
-<td style="padding-top:16px;font-size:10px;color:#6a6a6a;line-height:15px;">
+<td class="disclaimer" style="padding-top:16px;font-size:10px;color:#6a6a6a;line-height:15px;">
   <strong>Well-Being Notice:</strong> If you receive this message outside working hours,
   please respond at your convenience.
   <br><br>
@@ -176,7 +219,6 @@ body {
   Vriddhi Advisors is not responsible for alterations during transmission.
 </td>
 </tr>
-
 </table>
 </body>
 </html>
